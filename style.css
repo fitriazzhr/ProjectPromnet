@@ -1,310 +1,404 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-}
-.cover {
-    height: 700px;
-    width: 1350px; 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-}
-.sun {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 100px;
-    left: 130px;
-    object-fit: cover;
-}
-
-.signup {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 12px;
-    right: 130px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-    z-index: 2;
-    background: none; /* Menghapus latar belakang */
-    border: none; /* Menghapus batas */
-    cursor: pointer; /* Menunjukkan kursor saat diarahkan ke tombol */
-    overflow: hidden; /* Menghilangkan overflow */
-}
-
-.button-overlay {
-    position: absolute;
-    top: 15px;
-    bottom: 0;
-    right: 130px;
-    width: 95px;
-    height: 30px;
-    background-color: #8d6fbebd; 
-    border-radius: 25%; 
-    z-index: 1; 
-    opacity: 1;
-}
-
-
-.solar {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 12px;
-    left: 80px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-.home {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 18px;
-    right: 800px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.contact {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 18px;
-    right: 670px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.about {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 18px;
-    right: 500px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.login {
-    position: absolute;
-    width: 93px;
-    height: 36px;
-    top: 18px;
-    right: 250px;
-    font-family: "Poppins-Bold", Helvetica;
-    font-weight: 700;
-    color: #fffdfd;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.box .rectangle {
-    position:absolute;
-    width: 400px;
-    height: 500px;
-    top: 100px;
-    left: 830px;
-    background-color: #8d6fbebd;
-    border-radius: 35px;
-    box-shadow: inset 0px 4px 4px #00000040;
-    display: flex;
-    flex-direction: column;
-    justify-content:first baseline;
-    align-items: center;
-}
-
-.box .rectangle h2 {
-    margin-top: 0px;
-    font-size: 2em;
-    color: #ffffff;
-
-}
-
-.box .rectangle p {
-    margin-top: 50px;
-    color: #ffffff;
-}
-html {
-	font-size:62.5%;
-}
+/* CSS code */
 * {
-	margin: 0;
-	padding: 0;
-}
-ul, li {
-	list-style: none;
-}
-input {
-	border: none;
-}
-body {
-  width: 172.8rem;
-}.Solar-System {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 2.6rem 8rem 2.6rem 11.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: none;
+}
+
+.logo {
+  width: 300px;
+  padding-left: 3.5%;
+  padding-top: 0.5%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow: hidden;
+  height: 50px;
+  z-index: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('Image/bgStarrySky.jpg');
 }
-.Solar-System .ag1 {
-  width: 68.1rem;
-  flex-shrink: 0;
+
+.pulsa {
+  animation: pulsa 1.4s infinite;
+  min-width: 200px;
+  width: fit-content;
+  border-radius: 9999px;
+  overflow: hidden;
 }
-.Solar-System .ag1 .ag2 {
-  margin: 0rem 11.9rem 11rem 2.5rem;
-  width: calc(100% - 14.4rem);
-  display: flex;
-  align-items: center;
-}
-.Solar-System .ag1 .ag2 .solar {
-  margin-right: 27.6rem;
-  max-width: 18.7rem;
-  font-size: 4.8rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #ffffff;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.Solar-System .ag1 .ag2 .home {
-  margin-bottom: 5.4rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #ffffff;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.Solar-System .ag1 .mercury {
-  width: 68.1rem;
-  height: 68.6rem;
-  object-fit: cover;
-  vertical-align: top;
-  border-radius: 36.3rem;
-}
-.Solar-System .contact {
-  margin: 2.7rem 11.9rem 0rem 0rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #fcfbfb;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.Solar-System .ag3 {
-  margin-top: 1.4rem;
-  width: 59.7rem;
-  flex-shrink: 0;
-}
-.Solar-System .ag3 .ag4 {
-  margin: 0rem 4.5rem 18.2rem 0rem;
-  width: calc(100% - 4.5rem);
-  height: 5.8rem;
-  display: flex;
-  align-items: center;
-}
-.Solar-System .ag3 .ag4 .ag5 {
-  box-sizing: border-box;
-  padding: 1.3rem 6rem 0.9rem 0rem;
+
+.cta {
+  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  border: none;
+  outline: none;
+  background-color: none;
+  border-radius: 9999px;
+  padding: 9px 10px;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(109.6deg, #090979 11.2%, #9006A1 53.7%, #090979 100.2%);
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  position: relative;
 }
-.Solar-System .ag3 .ag4 .ag5 .about {
-  margin-right: 18.4rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #fffdfd;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.cta:active {
+  animation: pulsa-active .4s infinite;
 }
-.Solar-System .ag3 .ag4 .ag5 .login {
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #fffefe;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsa-stella 1.8s infinite;
+  transition: all .8s ease-in-out;
 }
-.Solar-System .ag3 .ag4 .signup {
-  width: 12.5rem;
-  height: 100%;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #fffdfd;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
+
+.star.a {
+  top: 8px;
+  left: 6px;
+}
+
+.star.b {
+  top: 2px;
+  left: 16px;
+}
+
+.star.c {
+  top: 18px;
+  left: 8px;
+}
+
+.star.d {
+  top: 14px;
+  left: 20px;
+}
+
+.star.e {
+  top: 30px;
+  left: 8px;
+}
+
+.star.f {
+  top: 24px;
+  left: 24px;
+}
+
+.star.g {
+  top: 10px;
+  left: 32px;
+}
+
+.pulsa:hover .star.a {
+  transform: translate3d(0px, 8px, 0);
+}
+
+.pulsa:hover .star.b {
+  transform: translate3d(-4px, 6px, 0);
+}
+
+.pulsa:hover .star.c {
+  transform: translate3d(14px, -8px, 0);
+}
+
+.pulsa:hover .star.d {
+  transform: translate3d(16px, -2px, 0);
+}
+
+.pulsa:hover .star.e {
+  transform: translate3d(58px, -20px, 0);
+}
+
+.pulsa:hover .star.f {
+  transform: translate3d(34px, 2px, 0);
+}
+
+.pulsa:hover .star.g {
+  transform: translate3d(10px, 16px, 0);
+}
+
+.rocket {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  z-index: -1;
+  transform: rotate(180deg);
+  transition: all .3s ease-in-out;
+}
+
+.pulsa:hover .rocket {
+  z-index: auto;
+  animation: muovi-razzo 1.8s linear;
+  transform: rotate(0deg);
+}
+
+@keyframes pulsa {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 8px #fbb32f01;
+  }
+}
+
+@keyframes pulsa-stella {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px #fbb32f01;
+  }
+}
+
+@keyframes muovi-razzo {
+  from {
+    transform: rotate(180deg);
+  }
+
+  25% {
+    transform: translate3d(40px, 32px, 0);
+  }
+
+  50% {
+    transform: translate3d(32px, -60px, 0);
+  }
+
+  75% {
+    transform: translate3d(0px, -60px, 0) rotate(0);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulsa-active {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 16px #fbb32f01;
+  }
+}
+
+button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-  background-color: #6c4d9e;
-  border-radius: 2.5rem;
-  flex-shrink: 0;
+  gap: 10px;
+  padding: 5px 50px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(262, 46%, 62%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
 }
-.Solar-System .ag3 .box {
-  box-sizing: border-box;
-  padding: 2.4rem 4.9rem 34.1rem 6.3rem;
+
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+button .gambar-btn {
+  width: 37px;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+button .gambar-btn7 {
+  width: 55px;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+button:hover .gambar-btn {
+  transform: scale(3) translate(50%);
+}
+
+button:hover .gambar-btn7 {
+  transform: scale(3) translate(50%);
+}
+
+.btn-1 {
+  padding: 15px 5%;
+}
+
+.btn-2 {
+  padding: 0px 5%;
+}
+
+.eng {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .eng {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+.in {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover .in {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+.slider {
   width: 100%;
-  align-items: center;
+  height: 700px;
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  background-size: cover;
+}
+
+.background-image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.caption-1 {
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.controls {
+  width: 100%;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  box-shadow: inset 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-  background-color: rgba(141, 111, 190, 0.7400000095);
-  border-radius: 3.5rem;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  margin-bottom: 22%;
 }
-.Solar-System .ag3 .box .rectangle {
-  margin: 0rem 2.1rem 5.2rem 0rem;
-  font-size: 5rem;
-  font-weight: 400;
-  line-height: 1.81;
-  color: #ffffff;
-  font-family: Palanquin Dark, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.prev {
+  margin-right: 93%;
 }
-.Solar-System .ag3 .box .desk {
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.81;
+
+.controls span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.controls span:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* page2 */
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-left {
+  width: 50%;
+  padding: 10px;
+  margin-top: 8%;
+  
+}
+
+.content-right {
+  width: 50%;
+  height: 50%;
+  padding: 50px;
+  margin-top: 13%;
+  margin-right: 7%;
   color: #ffffff;
-  font-family: Palanquin Dark, 'Source Sans Pro';
-  flex-shrink: 0;
+  background-color: rgba(141, 44, 197, 0.3);
+  border: 3px solid #FFFFFF;
+  border-radius: 15%;
+}
+
+.content-left img {
+  width: 80%;
+  margin-left: 8%;
+}
+
+.content-right h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.content-right h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
 }
