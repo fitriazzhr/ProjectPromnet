@@ -3,67 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar System</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Planetaria | Project</title>
 </head>
 <body>
-    <img src="bgStarrySky.jpeg" alt="" class="cover">
-    <img src="sun.png" alt="" class="sun">
-<div class="overlap-group">
-    <button class="signup">Sign Up</button>
-    <div class="button-overlay"></div>
-</div>
-<div class="solar">Solar System</div>
-<div class="home">Home</div>
-<div class="contact">contact Us</div>
-<div class="about">About Us</div>
-<div class="login">Log In</div>
-<img src="" alt="" class="sun">
-<div class="box">
-    <div class="rectangle">
-        <h2>Sun</h2>
-        <p>Matahari atau Surya adalah bintang di pusat tata surya.</p>
-    </div></div>
-  <div class="Solar-System">
-    <div class="ag1">
-      <div class="ag2">
-        <p class="solar">
-        Solar
-        <br/>
-        System
-        </p>
-        <p class="home">Home</p>
-      </div>
-      <img class="mercury" src="Image/Mercury.png"/>
-    </div>
-    <p class="contact">Contact Us</p>
-    <div class="ag3">
-      <div class="ag4">
-        <div class="ag5">
-          <p class="about">About Us</p>
-          <p class="login">Log In</p>
+
+  <header>
+    <div class="container">
+      <nav>
+          <img src="images/logo1.png" alt="logo" class="logo">
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#work">Contact Us</a></li>
+          </ul>
+          <a href="#"><div id="pulsa" class="pulsa">
+              <button id="cta" class="cta">
+                Masuk<div class="star a"></div>
+              <div class="star b"></div>
+              <div class="star c"></div>
+              <div class="star d"></div>
+              <div class="star e"></div>
+              <div class="star f"></div>
+              <div class="star g"></div>
+              <svg version="1.1" viewBox="0 0 1024 1024" width="24px" class="rocket"><path fill="#3A7EB9" d="M662.72 462.784l136.448 169.408v173.248l-136.448-48.32zM342.72 457.344L206.272 626.816v173.248l136.448-48.384z"></path><path fill="#D48171" d="M570.688 418.688l-142.848 1.152a266.496 266.496 0 0 1-20.288-0.576l3.712 448.64c0.256 28.928 94.272 130.048 94.272 130.048s93.888-102.656 93.632-131.584l-3.712-448.96a344.64 344.64 0 0 1-24.768 1.28z"></path><path fill="#E9DF92" d="M531.456 599.296l-63.04 0.576c-3.008 0-5.952-0.064-8.96-0.384l2.176 257.792c0.128 16.64 41.728 74.816 41.728 74.816s41.344-58.944 41.28-75.52l-2.176-257.92c-3.648 0.384-7.296 0.64-11.008 0.64z"></path><path fill="#B5D5EB" d="M554.304 93.568a324.352 324.352 0 0 0-110.592 1.728L342.72 240.768v584.512c13.824-0.96 27.968-1.536 42.368-1.536h245.248c11.84 0 23.36 0.384 34.816 1.024V253.312L554.304 93.568z"></path><path fill="#3A7EB9" d="M541.44 94.144L500.416 35.008l-45.696 59.136v29.504h89.024v-29.504zM459.456 288.64h88.96v88.896h-88.96zM459.456 467.456h88.96v88.96h-88.96zM459.456 634.176h88.96v88.896h-88.96zM364.928 788.736h277.76v44.352h-277.76z"></path></svg>
+              </button>
+            </div></a>
+      </nav>
+  </div>
+</header>
+
+<div class="slider">
+    <div class="slide active" style="background-image: url(images/page1.png)">
+      <div class="caption-1">
+        <div id="#home">
+          <table class="buttons">
+              <tr>
+                  <div class="btn-1"><a style="text-decoration: none;" href="#sun">
+                      <button>
+                          <img class="gambar-btn" src="images/Sun.png" alt="matahari">
+                          <span class="eng">Sun</span>
+                          <span class="in">Matahari</span>
+                      </button></a>
+                  </div>
+
+                  <div class="btn-2">
+                      <button>
+                          <img class="gambar-btn" src="images/Mercury.png" alt="merkurius">
+                          <span class="eng">Mercury</span>
+                          <span class="in">Merkurius</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-1">
+                      <button>
+                          <img class="gambar-btn" src="images/Venus.png" alt="venus">
+                          <span class="eng">Venus</span>
+                          <span class="in">Venus</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-2">
+                      <button>
+                          <img class="gambar-btn" src="images/Earth.png" alt="bumi">
+                          <span class="eng">Earth</span>
+                          <span class="in">Bumi</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-1">
+                      <button>
+                          <img class="gambar-btn" src="images/Mars.png" alt="mars">
+                          <span class="eng">Mars</span>
+                          <span class="in">Mars</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-2">
+                      <button>
+                          <img class="gambar-btn" src="images/Jupiter.png" alt="jupiter">
+                          <span class="eng">Jupiter</span>
+                          <span class="in">Jupiter</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-1">
+                      <button>
+                          <img class="gambar-btn7" src="images/Saturnus.png" alt="saturnus">
+                          <span class="eng">Saturn</span>
+                          <span class="in">Saturnus</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-2">
+                      <button>
+                          <img class="gambar-btn" src="images/Uranus.png" alt="uranus">
+                          <span class="eng">Uranus</span>
+                          <span class="in">Uranus</span>
+                      </button>
+                  </div>
+
+                  <div class="btn-1">
+                      <button>
+                          <img class="gambar-btn" src="images/neptune.png" alt="neptunus">
+                          <span class="eng">Neptune</span>
+                          <span class="in">Neptunus</span>
+                      </button>
+                  </div>
+              </tr>
+          </table>
         </div>
-        <div class="signup">Sign Up</div>
       </div>
-      <div class="box">
-        <p class="rentangle">Mercury</p>
-        <p class="desk">
-        Merkurius adalah planet terkecil di tata surya.
-        <br/>
-        Itu hanya sedikit lebih bear dari Bumi, planet
-        <br/>
-        ini paling dekat dengan matahari.
-        <br/>
-        Namun, bukan yang terpanas karena Venus
-        <br/>
-        lebih pamas. 
-        </p>
+    </div>
+
+    <div id="sun">
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Sun.png" alt="matahari">
+          </div>
+          <div class="content-right">
+            <h1>Sun <span>Matahari</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Mercury.png" alt="merkurius">
+          </div>
+          <div class="content-right">
+            <h1>Mercury <span>Merkurius</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Venus.png" alt="venus">
+          </div>
+          <div class="content-right">
+            <h1>Venus <span>Venus</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Earth.png" alt="bumi">
+          </div>
+          <div class="content-right">
+            <h1>Earth <span>Bumi</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Mars.png" alt="mars">
+          </div>
+          <div class="content-right">
+            <h1>Mars <span>Mars</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Jupiter.png" alt="jupiter">
+          </div>
+          <div class="content-right">
+            <h1>Jupiter <span>Jupiter</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Saturnus.png" alt="saturnus">
+          </div>
+          <div class="content-right">
+            <h1>Saturn <span>Saturnus</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/Uranus.png" alt="uranus">
+          </div>
+          <div class="content-right">
+            <h1>Uranus <span>Uranus</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url(images/bgStarrySky.jpg)">
+      <div class="caption-2">
+        <div class="row">
+          <div class="content-left">
+            <img src="images/neptune.png" alt="neptunus">
+          </div>
+          <div class="content-right">
+            <h1>Neptune <span>Neptunus</span></h1>
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima amet vero maxime reprehenderit expedita et quisquam optio veniam eum quae laudantium rerum adipisci, velit provident hic. Accusamus reprehenderit inventore repellat quae hic nostrum nobis?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <span class="prev">❮</span>
+      <span class="next">❯</span>
+    </div>
+  </div>  
+
+    <script src="script.js"></script>
 </body>
 </html>
